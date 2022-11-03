@@ -17,8 +17,8 @@ export default function AboutPage() {
           <h2>Full-Stack Developer</h2>
           <p>I am a software developer with experience in engineering and research. I have a life-long 
             passion for learning, and combined with a track record of collaborative work with 
-            professionals from varying backgrounds, I'm excited to work with you to build solutions 
-            and drive disruptive and innovative change. Nothing excites me more than the technical challenge 
+            professionals from varying backgrounds, I'm excited to work with you to build innovative 
+            solutions and drive disruptive change. Nothing excites me more than the technical challenge 
             posed to me, and to be able to share in the tribulations, joy and triumph with others during 
             this process.
           </p>
