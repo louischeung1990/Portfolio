@@ -20,10 +20,10 @@
 
 .about-cnt {
     width: 900px;
-    min-height: 75vh;
+    max-height: 850px;
     margin-left: 25vw;
     border: 2px solid black;
-    border-radius: 5px;
+    border-radius: 20px;
     background-color: #cce6ff;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -35,12 +35,15 @@
     grid-column-end: span 1;
     grid-row-start: 1;
     grid-row-end: span 1;
-    padding-top: 30px;
+    padding: 30px 30px 0px 30px;
+    display: flex;
+    /* flex-direction: column; */
 }
 
 .photo-cnt img{
-    max-width: 400px;
-    max-height: 500px;
+    /* justify-content: center; */
+    width: 400px;
+    max-height: 400px;
     width: auto;
     height: auto;
 }
@@ -55,7 +58,7 @@
 
 .about-me p {
     padding-right: 25px;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 .about-me img {
@@ -72,4 +75,8 @@
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: span 1;
+}
+
+.about-skills p {
+    line-height: 0.8;
 }

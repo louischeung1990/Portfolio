@@ -8,13 +8,13 @@ export default function AboutPage() {
   return (
     <div className="background-about">
       <br></br>
-      <br></br>
       <div className="about-cnt">
         <div className="photo-cnt">
           <img src={Louis} alt='Louis'/>
         </div>
         <div className="about-me">
           <h1>Louis Cheung</h1>
+          <h2>Full-Stack Developer</h2>
           <p>I am a software developer with experience in engineering and research. I have a life-long 
             passion for learning, and combined with a track record of collaborative work with 
             professionals from varying backgrounds, I'm excited to work with you to build solutions 
@@ -32,7 +32,17 @@ export default function AboutPage() {
           </span>
         </div>
         <div className="about-skills">
-          <p>text here</p>
+          <h2>Tech Stacks</h2>
+          <p>MERN Stack - MongoDB, Express, React, Node.js</p>
+          <p>Python/Django/PostgreSQL</p>
+          <p>JavaScript/HTML/CSS</p>
+          <h2>Frameworks and Libraries</h2>
+          <p>React: Redux and Styled-components</p> 
+          <p>AWS S3, socket.io</p>
+          <p>API integration: Leaflet maps
+            and geocoding, PokeAPI </p>
+          <h2>Deployment</h2>
+          <p>Github, Heroku</p>
         </div>
       </div>
     </div>
