@@ -1,0 +1,18 @@
+.background-projects {
+    position: relative;
+    z-index: 1;
+}
+
+.background-projects::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: calc(100vh - 50px);
+    opacity: 0.7;
+    z-index: -1;
+    background-image: url("../../../public/images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
