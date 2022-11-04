@@ -8,13 +8,7 @@ export const ContactUs = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "gmail",
-        "template_14bobew",
-        form.current,
-        YOUR_PUBLIC_KEY
-      )
+    emailjs.sendForm("service_edqr29a", "template_14bobew", form.current, "mo2loBYxwsbswX8Al")
       .then(
         (result) => {
           console.log(result.text);
@@ -37,7 +31,7 @@ export const ContactUs = () => {
         <p>Subject</p>
         <input className='contact-field' type="text" name="subject" placeholder="Subject" />
         <p>Message</p>
-        <textarea className='contact-textarea' name="message" />
+        <textarea className='contact-textarea' name="message" placeholder="Your message" />
         <input className='contact-submit' type="submit" value="Send" />
       </form>
     </div>
