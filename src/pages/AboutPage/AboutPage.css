@@ -1,3 +1,10 @@
+html, body {
+    height: 100%;
+    background-image: url("../../../public/images/background.jpg");
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
 .background-about {
     margin-top: 16px;
     position: relative;
@@ -10,12 +17,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    min-height: calc(100vh - 50px);
-    opacity: 0.7;
+    opacity: 0.95;
     z-index: -1;
-    background-image: url("../../../public/images/background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .about-cnt {

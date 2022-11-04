@@ -13,7 +13,7 @@ function App() {
       <Routes>
         <Route path='/about' element={<AboutPage />}/>
         <Route path='/projects' element={<ProjectsPage />}/>
-        <Route path='/contact' element={<ContactPage />}/>
+        {/* <Route path='/contact' element={<ContactPage />}/> */}
         <Route path='*' element={<Navigate to='/about' replace />}></Route>
       </Routes>
     </div>
