@@ -10,10 +10,10 @@ export const ContactUs = () => {
 
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "gmail",
+        "template_14bobew",
         form.current,
-        "YOUR_PUBLIC_KEY"
+        YOUR_PUBLIC_KEY
       )
       .then(
         (result) => {
@@ -23,6 +23,7 @@ export const ContactUs = () => {
           console.log(error.text);
         }
       );
+      e.target.reset()
   };
 
   return (
@@ -30,9 +31,11 @@ export const ContactUs = () => {
       <h1>Contact Me!</h1>
       <form className="contact-form" ref={form} onSubmit={sendEmail}>
         <p>Name</p>
-        <input className='contact-field' type="text" name="user_name" placeholder="Name" />
+        <input className='contact-field' type="text" name="name" placeholder="Name" />
         <p>Email</p>
-        <input className='contact-field' type="email" name="user_email" placeholder="Email" />
+        <input className='contact-field' type="email" name="email" placeholder="Email Address" />
+        <p>Subject</p>
+        <input className='contact-field' type="text" name="subject" placeholder="Subject" />
         <p>Message</p>
         <textarea className='contact-textarea' name="message" />
         <input className='contact-submit' type="submit" value="Send" />
