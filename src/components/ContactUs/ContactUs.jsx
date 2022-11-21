@@ -16,12 +16,7 @@ export const ContactUs = () => {
       )
       .then(
         (result) => {
-          // console.log(result.text)
-          setAlertContent({
-            heading: "Thank you for contacting me.", 
-            message: "I will respond to your message as soon as I can."
-          })
-          setShowAlert(true);
+          console.log(result.text)
         },
         (error) => {
           console.log(error.text);
