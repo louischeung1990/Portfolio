@@ -8,10 +8,20 @@ export const ContactUs = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm("service_edqr29a", "template_14bobew", form.current, "mo2loBYxwsbswX8Al")
+    emailjs.sendForm(
+      process.env.REACT_APP_YOUR_SERVICE_ID, 
+      process.env.REACT_APP_YOUR_TEMPLATE_ID, 
+      form.current, 
+      process.env.REACT_APP_YOUR_PUBLIC_KEY
+      )
       .then(
         (result) => {
-          console.log(result.text);
+          // console.log(result.text)
+          setAlertContent({
+            heading: "Thank you for contacting me.", 
+            message: "I will respond to your message as soon as I can."
+          })
+          setShowAlert(true);
         },
         (error) => {
           console.log(error.text);
