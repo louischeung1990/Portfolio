@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "http://louischeung1990.github.io/Portfolio",
+  "homepage": "https://louis-cheung.com",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.9.0",
